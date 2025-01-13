@@ -11,9 +11,9 @@ export class GenerateWalletController {
     next: NextFunction
 
   ): 
-  
+
   Promise<void> 
-  
+
   {
 
     try {
@@ -22,6 +22,7 @@ export class GenerateWalletController {
       const wordsCap = {
         "words": parseFloat(req.query['words'] as string) || 12
       }
+
       const validatingData =  GenerateWalletValidation(req).parse(wordsCap)
 
       // data object
