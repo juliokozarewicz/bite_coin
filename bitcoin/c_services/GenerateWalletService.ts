@@ -20,6 +20,10 @@ export class GenerateWalletService {
 
             mnemonic = bip39.generateMnemonic(256)
 
+        } else if (validatedData.words === 12) {
+
+            mnemonic = bip39.generateMnemonic()
+
         } else {
 
             mnemonic = bip39.generateMnemonic()
