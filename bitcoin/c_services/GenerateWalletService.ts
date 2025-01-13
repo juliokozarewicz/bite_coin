@@ -34,7 +34,7 @@ export class GenerateWalletService {
                 "seeds": mnemonic,
             }],
             "links": {
-                "self": '/helloworld/helloworld',
+                "self": '/bitcoin/generate-wallet',
             }
         }
 
