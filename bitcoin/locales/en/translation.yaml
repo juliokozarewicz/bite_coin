@@ -3,4 +3,9 @@ bad_request: "bad request, please check the data sent."
 server_error: "An error has occurred, please try again later."
 contains_too_many_characters: "This field contains too many characters."
 contains_disallowed_characters: "This field contains disallowed characters."
+<<<<<<< HEAD
 too_many_requests: "Too many requests, please try again later"
+=======
+too_many_requests: "Too many requests, please try again later"
+generate_wallet_ok: "Wallet created successfully!"
+>>>>>>> 68dbf44 ([FEATURE]: Create wallet)
