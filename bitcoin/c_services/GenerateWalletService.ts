@@ -1,3 +1,4 @@
+import { GenerateWalletValidationType } from "../b_validations/GenerateWalletValidation";
 import { StandardResponse } from "../f_utils/StandardResponse"
 import * as bip39 from 'bip39'
 
@@ -8,10 +9,22 @@ export class GenerateWalletService {
         this.t = t;
     }
 
-    async execute(): Promise<StandardResponse> {
+    async execute(
+        validatedData: GenerateWalletValidationType
+    ): Promise<StandardResponse> {
 
-        // generate seeds (12)
-        const mnemonic = bip39.generateMnemonic()
+        // generate seeds
+        let mnemonic: string
+
+        if (validatedData.words === 24) {
+
+            mnemonic = bip39.generateMnemonic(256)
+
+        } else {
+
+            mnemonic = bip39.generateMnemonic()
+
+        }
 
         return {
             "status": 'success',
@@ -19,7 +32,6 @@ export class GenerateWalletService {
             "message": `${this.t('generate_wallet_ok')}`,
             "data": [{
                 "seeds": mnemonic,
-                "pubAdress": `address`
             }],
             "links": {
                 "self": '/helloworld/helloworld',
