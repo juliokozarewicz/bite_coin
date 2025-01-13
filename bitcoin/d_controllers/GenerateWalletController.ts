@@ -1,6 +1,4 @@
 import { NextFunction, Request, Response } from 'express';
-import { escape } from 'lodash'
-import { HelloWorldValidation } from '../b_validations/HelloWorldValidation';
 import { GenerateWalletService } from '../c_services/GenerateWalletService';
 
 export class GenerateWalletController {

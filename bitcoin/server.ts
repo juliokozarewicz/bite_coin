@@ -74,11 +74,7 @@ app.use(rateLimiter);
 // run server
 // =============================================================================
 // microservice main route
-<<<<<<< HEAD
-app.use('/helloworld', routes);
-=======
 app.use('/bitcoin', routes);
->>>>>>> 68dbf44 ([FEATURE]: Create wallet)
 
 // error handler
 //------------------------------------------------------

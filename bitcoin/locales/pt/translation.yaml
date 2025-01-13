@@ -3,9 +3,4 @@ bad_request: "Solicitação inválida, por favor verifique os dados enviados."
 server_error: "Ocorreu um erro, por favor tente novamente mais tarde."
 contains_too_many_characters: "Este campo contém caracteres demais."
 contains_disallowed_characters: "Este campo contém caracteres não permitidos."
-<<<<<<< HEAD
 too_many_requests: "Muitas requisições, tente novamente mais tarde."
-=======
-too_many_requests: "Muitas requisições, tente novamente mais tarde."
-generate_wallet_ok: "Carteira criada com sucesso!"
->>>>>>> 68dbf44 ([FEATURE]: Create wallet)

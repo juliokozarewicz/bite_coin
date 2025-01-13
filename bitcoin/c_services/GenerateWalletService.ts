@@ -1,4 +1,3 @@
-import { HelloWorldValidationType } from "../b_validations/HelloWorldValidation";
 import { StandardResponse } from "../f_utils/StandardResponse"
 import * as bip39 from 'bip39'
 
